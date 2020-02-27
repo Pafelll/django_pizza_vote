@@ -16,7 +16,7 @@ class PizzaView(viewsets.ModelViewSet):
 
 @api_view(['POST'])
 def vote_view(request):
-    """ Handle vote for specific pizza tby id """
+    """ Handle vote for specific pizza by id eg. {"choice_id":3} """
     pizza = get_object_or_404(Pizza, pk=request.data['choice_id'])
     serializer = VoteSerializer(data=request.data)
     if serializer.is_valid():
