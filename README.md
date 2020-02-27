@@ -13,7 +13,7 @@ Application for voting for the best pizza.
     git clone https://github.com/Pafelll/django_pizza_vote
     install prerequisites    
 
-##Endpoints
+### Endpoints
     GET /api/pizza/ request to retrieve all available pizzas with toppings
 ![](screen/get.PNG)
    
